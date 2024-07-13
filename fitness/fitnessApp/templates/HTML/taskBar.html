@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'CSS/toolBar.css' %}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            {% block content %}
+            <ul name="Header">
+                <li><a href="{% url 'home' %}">HomePage</a></li>
+                <li>example link</li>
+                <li>example link</li>
+                <li>example link</li>
+                <li>example link</li>
+            </ul>
+            {% endblock %}
+        </nav>
+    </header>
+</body>
+
+</html>
